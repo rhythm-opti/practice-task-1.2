@@ -1,0 +1,173 @@
+body{
+    overflow: hidden;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.popup-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    z-index: 1;
+    top: 0;
+}
+
+.popup{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 23px;
+    width: 770px;
+    height: 539px;
+}
+
+.popup-overlay {
+    background: rgba(0,0,0,0.5);
+}
+
+.popup-details {
+    display: flex;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 23px;
+}
+
+.popup-details h3 {
+    font-size: 22px;
+    color: #333;
+    line-height: 28px;
+    margin-top: 40px;
+    font-weight: 400;
+    width: 316px;
+}
+
+span.close-popup {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.header-span-color{
+   color: #ff6c37;
+}
+
+.content-list li {
+    position: relative;
+    margin-left: 30px; 
+    margin-bottom: 24px;
+}
+
+.content-list li span{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.left-side-popup {
+    width: 43%;
+}
+
+.right-side-popup {
+    width: 57%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 52px 0 51px;
+}
+
+.content-list li:before {
+    content: '';
+    position: absolute;
+    left: -33px;
+    width: 24px;
+    height: 24px;
+    background: url(./Line.png) no-repeat;
+    background-size: 100%;
+}
+
+ul.content-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.left-side-popup img {
+    border-top-left-radius: 23px;
+    border-bottom-left-radius: 23px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.submit-button{
+    width: 279px;
+    color:#fff;
+    border-radius: 8px;
+    border: #DF720C;
+    height: 47px;
+    background: #DF720C;
+    margin-top: 8px;
+}
+
+.footer{
+    height: 18px;
+    width: 219px;
+    line-height: 18px;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+a{
+    color: black;
+}
+
+
+@media (max-width:800px) {
+    .popup{
+        width:327px;
+        height:629px;
+    }
+
+    .popup-details {
+        flex-direction: column;
+    }
+
+    .popup-details h3 {
+        width: 266px;
+        margin: 9px;
+    }
+    
+    .footer {
+        margin-top: 20px;
+    }
+
+    .left-side-popup img {
+        border-radius: 23px;
+    }
+
+    .left-side-popup {
+        width: 327px;
+        height: 153.02px;
+    }
+
+    .right-side-popup {
+        width: auto;
+        height: 77%;
+        padding: 8px 24px 0px 24px;
+    }
+
+    .content-list li {
+        margin-bottom: 15px;
+    }
+
+    .submit-button {
+        margin-top: 10px;
+    }
+}
